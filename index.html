@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阳台风景 - 洗衣小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 场景1：开始界面 -->
+    <div class="speech-bubble" id="speechBubble">
+        <p>我出去玩不小心摔了一跤，能帮我洗洗衣服吗？</p>
+    </div>
+    <div class="start-button" id="startButton">
+        <img src="kaishi.png" alt="开始">
+    </div>
+    <div class="girl-container" id="girlContainer">
+        <img src="chushi.png" alt="小女孩" class="girl" id="girl">
+    </div>
+    <div class="water-overlay" id="waterOverlay"></div>
+    <div class="back-button" id="backButton">
+        <img src="fanhui.png" alt="返回">
+    </div>
+
+    <!-- 场景2：洗衣界面 -->
+    <div class="scene2-dialog" id="scene2Dialog">
+        <p>点击脏衣娄投放衣物</p>
+    </div>
+    <div class="laundry-area" id="laundryArea"></div>
+    <img src="lou.png" alt="脏衣娄" class="lou-image" id="louImage">
+    <img src="zang1.png" alt="脏衣1" class="zang-image" id="zang1">
+    <img src="zang2.png" alt="脏衣2" class="zang-image" id="zang2">
+    <img src="zang3.png" alt="脏衣3" class="zang-image" id="zang3">
+    <img src="zang4.png" alt="脏衣4" class="zang-image" id="zang4">
+    <img src="dier.png" alt="第二阶段" class="dier-image" id="dier">
+    <img src="yuan.PNG" alt="圆圈" class="yuan-image" id="yuan">
+    <img src="yuan1.PNG" alt="圆圈1" class="yuan1-image" id="yuan1">
+
+    <!-- 轨道素材元素 -->
+    <img src="raw_baiyuanwei.png" alt="白鸢尾" class="raw-element" id="raw_baiyuanwei">
+    <img src="raw_qiangwei.png" alt="蔷薇" class="raw-element" id="raw_qiangwei">
+    <img src="raw_xunyicao.png" alt="薰衣草" class="raw-element" id="raw_xunyicao">
+    <img src="raw_bailanhua.PNG" alt="百兰花" class="raw-element" id="raw_bailanhua">
+    <img src="raw_yilanyilan.PNG" alt="伊兰伊兰" class="raw-element" id="raw_yilanyilan">
+    <img src="raw_yeru.PNG" alt="耶蓉" class="raw-element" id="raw_yeru">
+    <img src="raw_baidingxiang.PNG" alt="白丁香" class="raw-element" id="raw_baidingxiang">
+    <img src="raw_fenglingcao.PNG" alt="风铃草" class="raw-element" id="raw_fenglingcao">
+    <img src="raw_foshougan.PNG" alt="佛手柑" class="raw-element" id="raw_foshougan">
+    <img src="raw_xiangwanyu.PNG" alt="香碗豆" class="raw-element" id="raw_xiangwanyu">
+    <img src="raw_tanmu.PNG" alt="檀木" class="raw-element" id="raw_tanmu">
+
+    <!-- 合成公式区域 -->
+    <div class="formula-container" id="formulaContainer">
+        <img src="slot1.PNG" alt="槽位1" class="slot-image" id="slot1">
+        <img src="jia.PNG" alt="加号" class="formula-image">
+        <img src="slot2.PNG" alt="槽位2" class="slot-image" id="slot2">
+        <img src="jia.PNG" alt="加号" class="formula-image">
+        <img src="slot3.PNG" alt="槽位3" class="slot-image" id="slot3">
+        <img src="dengyu.PNG" alt="等于" class="formula-image">
+        <img src="btn_hecheng.PNG" alt="合成按钮" class="btn-hecheng-image" id="btnHecheng">
+    </div>
+    <img src="shouce1.png" alt="手册1" class="shouce1-image" id="shouce1">
+    <img src="shouce2.png" alt="手册2" class="shouce2-image" id="shouce2">
+
+    <!-- 提示图片 -->
+    <img src="tip_success.PNG" alt="成功提示" class="tip-image" id="tipSuccess">
+    <img src="tip_fail.PNG" alt="失败提示" class="tip-image" id="tipFail">
+
+    <!-- 视频容器 -->
+    <div class="video-container" id="videoContainer">
+        <video id="resultVideo" class="result-video" autoplay onended="videoEnded()">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- 场景3：细菌游戏界面 -->
+    <img src="disan.png" alt="disan" class="disan-image" id="disan">
+    <img src="xiaomie.PNG" alt="xiaomie" class="xiaomie-image" id="xiaomie">
+    <img src="btn_hecheng.PNG" alt="合成按钮" class="btn-hecheng-scene3" id="btnHechengScene3">
+    <img src="qunzi.PNG" alt="qunzi" class="qunzi-image" id="qunzi">
+
+    <!-- 细菌图片 -->
+    <img src="jun1.PNG" alt="jun1" class="jun-image" id="jun1">
+    <img src="jun2.PNG" alt="jun2" class="jun-image" id="jun2">
+    <img src="jun3.PNG" alt="jun3" class="jun-image" id="jun3">
+
+    <!-- 通关效果图片 -->
+    <img src="gj.PNG" alt="通关" class="gj-image" id="gj">
+
+    <script src="game.js"></script>
+</body>
+</html>
